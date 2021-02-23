@@ -1,0 +1,13 @@
+
+
+<p>client component works!</p>
+
+<button (click)="getClients()"> List of clients </button>
+<ul>
+    <li *ngFor="let client of clients">
+        <span>{{ client.name }}</span>
+        <span>{{ client.phone}}</span>
+        <span>{{ client.mail}}</span>
+       
+    </li>
+</ul>
